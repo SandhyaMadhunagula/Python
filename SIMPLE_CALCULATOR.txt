@@ -1,0 +1,36 @@
+print("Designing a Simple Calculator")
+def addition(num1,num2):
+    return num1+num2
+def subtract(num1,num2):
+    return  num1-num2
+def multiplication(num1,num2):
+    return num1*num2
+def division(num1,num2):
+    return num1/num2
+print("operators to calculate to perfrom an operation:\n"
+   "1.ADD\n"
+   "2.SUBSTRACTION\n"
+   "3.MULTIPLICATION\n"
+   "4.DIVISION\n")
+   #"5.EXIT\n")
+operator=int(input("select an operator:"))
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+if operator==1:
+    print(a, "+",b,"=",
+                 addition(a,b))
+elif(operator==2):
+    print(a, "-",b,"=",
+                 subtract(a,b))         
+elif(operator==3):
+    print(a, "*",b,"=",
+                multiplication(a,b))       
+elif(operator==4):
+    print(a, "/",b,"=",
+                division(a,b)) 
+#elif(operator==5):
+    #break
+ #   print("exit")
+else:
+    
+    print("invalid")
