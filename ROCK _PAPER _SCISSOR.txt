@@ -1,0 +1,22 @@
+import random
+print("Winning rules of the game ROCK PAPER SCISSOR as follows:\n ROCK vs SCISSCOR->ROCK Wins\n SCISSCOR vs PAPER->SCISSCOR Wins\n PAPER vs ROCK->PAPER Wins")
+user_choice=int(input("enter your choice:\n0.Rock\n1.Paper\n2.Scissor\n"))
+if user_choice<0 or user_choice>2:
+    print("enter a valid number to play the game")
+else:
+    print(f"user entered {user_choice}to play the game")
+    computer_choice=random.randint(0,2)
+    print(f"computer entered {computer_choice} to play the game")
+    if(user_choice==computer_choice):
+        print("It\'s a draw case.so,play again")
+    elif(user_choice==0 and computer_choice==2):
+        print("You won the game")
+    elif(user_choice==2 and computer_choice==0):
+        print("You lost the game")
+    elif(user_choice>computer_choice):
+        print("You won the game")
+    elif(user_choice>computer_choice):
+        print("You won the game")
+    else:
+        print("You lost the game")
+print("I hope you enjoyed with this game...\n ..Thank you..")
