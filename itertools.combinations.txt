@@ -1,0 +1,7 @@
+from itertools import combinations
+a,n=input().split()
+a=sorted(a)
+n=int(n)
+for j in range(1,n+1):
+     for i in list(combinations(a,j)):
+         print(''.join(i))
