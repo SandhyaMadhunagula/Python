@@ -1,0 +1,45 @@
+a="practice"
+v='aeiou'
+x=""
+y=0
+z=""
+for  i in a:
+    if v.count(i):
+        x=str(i)+x
+        print(x)
+    else:
+        continue
+for i in a:
+     if v.count(i):
+         print(i)
+         print("z:",z)
+         z+=x[y]
+         print(z)
+         y+=1
+     else:
+         z+=i
+print(z)
+
+---------------------------------->
+class Solution:
+    def modify(self, s):
+        # code here
+        v='aeiou'
+        x=""
+        y=0
+        z=""
+        for i in s:
+            if v.count(i):
+                x=str(i)+x
+            else:
+                continue
+        for i in s:
+            if v.count(i):
+                z+=x[y]
+                y+=1
+            else:
+                z+=i
+        return z
+sol=Solution()
+res=sol.modify("practice")
+print(res)
