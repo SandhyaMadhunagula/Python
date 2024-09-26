@@ -1,0 +1,18 @@
+n=4
+#s=1111
+s="01101"
+c=0
+for i in s:
+    if i=='1':
+        print(i)
+        c+=1
+        print("count",c)
+print((c*(c-1))//2)
+----------------------------->
+def binarySubstring(self,n,s):
+        #code here
+        count=0    #1111
+        for i in s:
+            if i=='1':
+                count+=1
+        return (count*(count-1))//2
